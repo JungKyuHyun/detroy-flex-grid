@@ -5,12 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>개자이너 - CSS 뽀개자</title>
     <link rel="stylesheet" href="default.css" />
+    <style>
+        .flex-container {
+            display: flex;
+            /* display: inline-flex; */
+            
+            /* 메인축 나의 아이템을 관통하는 일직선이라고 생각하면 된다.
+                - 기본은 row
+                만약 메인축을 바꾸고 싶다면, flex-direction을 사용하면 된다. 
+                cf) default: flex-direction: row
+            */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            
+            /* wrap은 컨텐츠가 삐져나갔을때 어떻게 처리할지(줄바꿈 여부)에 대한 부분. */
+            /* 기본값은 flex-wrap: nowrap; 넘어가도 신경 안쓴다. 화면 밖으로 */ 
+            /* flex-wrap: wrap; */
+
+            /* flex-direction과 flex-wrap을 한번에 사용할 수 있는 축약형이 존재 */
+            /* flex-flow: flex-direction flew-wrap; */
+            flex-flow: row wrap;
+            
+        }
+    </style>
 </head>
 <body>
     <div class="flex-container">
-        <div class="flex-item">1</div>
-        <div class="flex-item">2</div>
-        <div class="flex-item">3</div>
+        <div class="flex-item">11111111111111111111111111111111111111111111</div>
+        <div class="flex-item">2222222222222222222222222222222222222222222</div>
+        <div class="flex-item">3333333333333333333333333333333333333333</div>
     </div>
 </body>
 </html>
+
